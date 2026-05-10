@@ -36,6 +36,11 @@ th:hover {
   background: #ddd;
 }
 
+th.sorted {
+  background: #ddd;
+  color: #0066cc;
+}
+
 th span {
   color: blue;
 }
