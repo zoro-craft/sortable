@@ -28,3 +28,14 @@ function cleanHero(hero) {
     alignment: bio.alignment || ''
   };
 }
+// Download all the heroes and return them as a clean array.
+export async function loadHeroes() {
+  const response = await fetch(HERO_URL);
+  const rawList = await response.json();
+
+  const cleanList = [];
+  for (let i = 0; i < rawList.length; i++) {
+    cleanList.push(cleanHero(rawList[i]));
+  }
+  return cleanList;
+}
