@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f9;
+  padding: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #eee;
+  cursor: pointer;
+}
+
+th:hover {
+  background: #ddd;
+}
+
+th span {
+  color: blue;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
