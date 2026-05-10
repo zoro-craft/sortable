@@ -7,8 +7,9 @@ function isEmpty(value) {
 // Pull the first number out of a string like "78 kg" -> 78. Returns NaN if none.
 function getNumber(text) {
   if (typeof text === 'number') return text;
-  const match = String(text).match(/[\d.]+/);
-  if (match) return parseFloat(match[0]);
+const cleanText = String(text).replace(/,/g, '');
+  const match = cleanText.match(/[\d.]+/); 
+    if (match) return parseFloat(match[0]);
   return NaN;
 }
 
