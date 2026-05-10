@@ -1,0 +1,63 @@
+/* Basic page setup */
+body {
+  font-family: sans-serif;
+  background: #f4f4f9;
+  padding: 1rem;
+}
+
+/* Group our search and buttons together */
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Make inputs and buttons look neat */
+input, select, button {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Make the table fill the screen */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+/* Give table cells some breathing room */
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Headers are clickable for sorting */
+th {
+  background: #eee;
+  cursor: pointer;
+}
+
+/* Highlight headers when we hover over them */
+th:hover {
+  background: #ddd;
+}
+
+/* Highlight the header that is currently sorted */
+th.sorted {
+  background: #ddd;
+  color: #0066cc;
+}
+
+/* Make the sort arrows blue */
+th span {
+  color: blue;
+}
+
+/* Make the superhero icons perfectly round */
+img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
