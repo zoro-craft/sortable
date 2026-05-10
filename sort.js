@@ -71,3 +71,16 @@ export function sortHeroes(list, key, order) {
 
   return copy;
 }
+
+// Return just the slice of heroes for the current page.
+export function getPage(list, perPage, pageNumber) {
+  if (perPage === 'all') return list;
+  const start = (pageNumber - 1) * perPage;
+  return list.slice(start, start + perPage);
+}
+
+// How many pages total?
+export function getTotalPages(totalItems, perPage) {
+  if (perPage === 'all') return 1;
+  return Math.ceil(totalItems / perPage);
+}
